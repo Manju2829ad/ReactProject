@@ -1,0 +1,40 @@
+.Container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 100px; /* Adjust this value to avoid overlap */
+    width: 97vw;
+    height: 400px;
+    border: 3px solid #ffffff;
+    box-shadow: 0px 12px 12px #e8e3e31a;
+    position: relative; /* Changed from fixed to relative */
+    background-color:  #ffffff;
+}
+
+.heading {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.items {
+    width: 250px;
+    height: 300px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    box-sizing: border-box;
+    object-fit:contain;
+}
+
+
+.items img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* .ItemName {
+    text-align: center;
+    margin-top: 10px; /* Adds some space between the image and the text 
+} */

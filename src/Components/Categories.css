@@ -1,0 +1,20 @@
+
+.Categories{
+
+
+display: flex;
+flex-direction: row;
+justify-content: space-around;
+align-items: center;
+  width: 97vw;
+  height: 150px;
+  border: 3px solid hsl(0, 0%, 96%);
+margin-top: 50px;
+  /* box-shadow: 1px 1px 1px rgba(hsl(0, 0%, 100%), 0.2); */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);   
+/* position: relative; */
+right: 20px;
+background-color:  #ffffff;
+}
+
+

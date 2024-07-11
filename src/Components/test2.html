@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Await with setInterval</title>
+</head>
+<body>
+
+  <script>
+    async function fetchData() {
+      console.log("Before await"); // 1. Printed immediately
+
+      // Simulate network delay with setTimeout
+      const delay = await new Promise(resolve => setTimeout(resolve, 2000));  // Awaits 2-second delay
+
+      const response = await fetch('data.txt');
+
+      console.log("Hello1");
+      console.log("hello2");
+
+      if (!response.ok) {
+        throw new Error(`Error fetching data: status ${response.status}`);
+      }
+
+      const data = await response.text();
+      console.log("Data:", data); // 4. Printed after data is parsed
+
+      console.log("After await (after response received)"); // 3. Printed after response and data
+    }
+
+    const intervalId = setInterval(fetchData, 4000); // Calls fetchData every 4 seconds (adjusted to avoid overlap)
+
+    // Optional: Clear interval on button click (assuming you have a button with id="clearBtn")
+    const clearBtn = document.getElementById("clearBtn");
+    if (clearBtn) {
+      clearBtn.addEventListener("click", () => {
+        clearInterval(intervalId);
+        console.log("Interval cleared");
+      });
+    }
+  </script>
+  <button id="clearBtn">Clear Interval</button>
+
+</body>
+</html>

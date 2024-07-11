@@ -1,0 +1,69 @@
+.OTP{
+    display: flex; /* Center elements horizontally */
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally within the container */
+    justify-content: center; /* Center elements vertically within the container */
+    width: 100vw; /* Stretch to full viewport width */
+    height: 100vh; /* Stretch to full viewport height */
+    background-color: #f0f2f5; /* Light gray background */
+    font-family: sans-serif; /* Default font */
+  }
+  
+  .OTP h1 {
+    font-size: 24px; /* Adjust font size as needed */
+    margin-bottom: 16px; /* Add some space below the heading */
+  }
+  
+  .OTP h6 {
+    font-size: 16px; /* Adjust font size as needed */
+    color: gray; /* Subdued text color */
+    margin-bottom: 24px; /* Add some space below the subheading */
+  }
+  
+  .OTPFORM{
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form elements horizontally */
+  }
+  
+  .OTPFORM .OTP-fields {
+    display: flex;
+    justify-content: space-between; /* Distribute input fields evenly */
+    width: 200px; /* Adjust width as needed */
+    margin-bottom: 16px; /* Add some space below the input fields */
+  }
+  
+  .OTPFORM .OTP-fields input {
+    width: 40px; /* Adjust input field width as needed */
+    height: 40px; /* Adjust input field height as needed */
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 4px; /* Rounded corners */
+    text-align: center; /* Center input text */
+    font-size: 16px; /* Adjust font size as needed */
+  }
+  
+  .OTPFORM .OTP-fields input:focus {
+    outline: none; /* Remove default outline on focus */
+    border-color: #999; /* Slightly darker border on focus */
+  }
+  
+  .OTPFORM button {
+    background-color: #007bff; /* Blue button color */
+    color: white; /* White button text */
+    padding: 10px 20px; /* Adjust button padding as needed */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Rounded corners */
+    cursor: pointer; /* Indicate clickable element */
+    margin-top: 16px; /* Add some space above the button */
+  }
+  
+  .OTPFORM button:hover {
+    background-color: #0069d9; /* Slightly darker blue on hover */
+  }
+  
+
+  .otp-input::-webkit-inner-spin-button,
+.otp-input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0; /* Optional for better spacing */
+}

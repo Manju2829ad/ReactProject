@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #2874f0; /* Flipkart blue */
+    color: white;
+    position: relative;
+  }
+  
+  .logo {
+    flex: 1;
+  }
+  
+  .logo img {
+    height: 40px; /* Adjust the size as needed */
+  }
+  
+  .searchbar {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .searchbar input {
+    width: 80%;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .login {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .login-link {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: bold;
+  }
+  
+  .cart {
+    display: flex;
+    align-items: center;
+  }
+  
+  .cart img {
+    height: 24px; /* Adjust the size as needed */
+  }
+  

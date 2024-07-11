@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button id="button" onclick="getData()">Click me</button>
+  <p id="para"></p>
+  <script>
+    let button = document.getElementById('button');
+    let paraEle = document.getElementById('para');
+
+    function getData() {
+      // Simulate delayed response (replace with actual fetch)
+      setTimeout(() => {
+        fetch('./data.txt')
+          .then(response => {
+            if (!response.ok) {
+              throw new Error(`HTTP error! status: ${response.status}`);
+            }
+            return response.text();
+          })
+          .then(data => {
+            paraEle.innerText = data;
+          })
+          .catch(error => {
+            console.error('Error fetching data:', error);
+            paraEle.innerText = 'Error fetching data!';
+          });
+      }, 2000); // Simulate 2-second delay
+
+
+      console.log("hello1");
+
+      console.log("Hello2")
+    }
+  </script>
+</body>
+</html>

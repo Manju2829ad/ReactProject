@@ -1,0 +1,72 @@
+.Filters{
+    width: 280px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+background-color: #FFFFFF;
+}
+
+.FilterSection{
+margin-left: 20px;
+}
+
+
+
+.categories{
+    width: 280px;
+height: 300px;
+background-color:  #FFFFFF;
+border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.Price{
+    width: 280px;
+    height: 300px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color:  #FFFFFF;
+}
+
+
+.Brand{
+    width: 280px;
+    height: 500px;
+    background-color:  #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+
+.RightSection{
+    position: absolute;
+    top: 8px;
+ right: 10px;
+
+}
+
+
+.Sorting{
+    display: flex;
+     width: 77vw;
+    height: 100px; 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color:  #FFFFFF;
+    justify-content: flex-start;
+    align-items: last baseline;
+ 
+
+}
+
+.Sorting a{
+    text-decoration: none;
+ margin-right: 20px;
+ font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+ color: black;
+}
+
+
+
+.DisplaySection{
+    width: 77vw;
+    height: 300px; 
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color:  #FFFFFF;
+}
